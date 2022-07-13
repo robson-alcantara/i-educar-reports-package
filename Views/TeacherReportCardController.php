@@ -35,8 +35,8 @@ class TeacherReportCardController extends Portabilis_Controller_ReportCoreContro
     public function form()
     {
         $this->inputsHelper()->dynamic(['ano', 'instituicao', 'escola', 'curso', 'serie']);
-        $this->inputsHelper()->dynamic('turma', ['required' => false]);
-        $this->inputsHelper()->dynamic('componenteCurricular', ['required' => false]);
+        $this->inputsHelper()->dynamic('turma');
+        $this->inputsHelper()->dynamic('componenteCurricular');
         $options = [
             'label' => 'Situação',
             'resources' => [
